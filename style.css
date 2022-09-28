@@ -1,0 +1,95 @@
+#main {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
+}
+
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgba(228, 203, 203, 0.336);
+}
+.hero {
+  padding: 0 0;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 0 1rem;
+  width: 86%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #c44029;
+  color: white;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: scroll;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  background-color: rgba(255, 228, 196, 0.651);
+  padding-top: 0.5rem;
+  width: 86%;
+}
+
+.panel #day {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+  /* color: black; */
+}
+
+.panel #day:hover {
+  color: white;
+  background-color: #c44029;
+}
+
+@media (width < 500px) {
+  .panel {
+    font-size: 8px;
+  }
+
+  .markdown-body h2 {
+    font-size: 12px;
+  }
+
+  #main {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 0;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+footer {
+  width: 86%;
+  height: 100px;
+  background-color: #070707d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: rgba(255, 255, 255, 0.582);
+  overflow: hidden;
+  padding-top: 1rem;
+  row-gap: 0.1rem;
+}
+
+#created,
+#copyright {
+  margin-bottom: 0;
+}
